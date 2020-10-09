@@ -1,0 +1,11 @@
+.dish-section {
+  border-radius: 25px;
+  background-color: #c2c2c2;
+}
+.dish-section .dish-section__dish-box {
+  padding: 5px 5px 5px 5px;
+  margin: 5% 5% 5% 5%;
+  box-shadow: 1px 1px 1px 1px;
+  width: 90%;
+  background-color: white;
+}

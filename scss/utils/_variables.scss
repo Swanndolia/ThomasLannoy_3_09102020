@@ -1,0 +1,41 @@
+$primary-color:#9356DC;
+$seconday-color:#FF79DA;
+$tertiary-color:#99E2D0;
+$footer-bg:#2c2c2c;
+$section-bg:#e2e2e2;
+$box-bg:white;
+$dish-box-radius: 15px;
+$dish-box-padding: 5px;
+$dish-box-margin: 5%;
+$dish-box-shadow: 1px;
+$dish-box-layout: (padding:($dish-box-padding), margin:($dish-box-margin), shadow:($dish-box-shadow));
+$font-palette: (brand: (size: 26px,
+        weight: 900,
+        color: $footer-bg,
+        type: italic,
+        margin: 25px,
+    ),
+    dish-type: (size: 18px,
+        weight: 300,
+        color: $footer-bg,
+        type: normal,
+        margin: 25px,
+    ),
+    dish-name: (size: 17px,
+        weight: 600,
+        color: $footer-bg,
+        type: normal,
+        margin: 5px,
+    ),
+    dish-sub: (size: 15px,
+        weight: 300,
+        color: $footer-bg,
+        type: normal,
+        margin: 5px,
+    ),
+    footer: (size: 14px,
+        weight: 500,
+        color: $section-bg,
+        type: normal,
+        margin: 5px,
+    ));

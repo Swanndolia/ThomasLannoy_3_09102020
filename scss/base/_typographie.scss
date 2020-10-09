@@ -1,0 +1,16 @@
+h1 {
+    @include font-palette(brand);
+}
+h2 {
+    @include font-palette(dish-type);
+}
+h3 {
+    @include font-palette(dish-name);
+}
+h4 {
+    @include font-palette(dish-sub);
+}
+h5 {
+    @include font-palette(footer);
+}
+

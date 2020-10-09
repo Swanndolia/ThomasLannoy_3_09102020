@@ -1,0 +1,13 @@
+@mixin font-palette($type) {
+    $palette: map-get($font-palette, $type);
+    font-size: map-get($palette, size);
+    font-weight: map-get($palette, weight);
+    font-style: map-get($palette, type);
+    color: map-get($palette, color);
+    margin-left: map-get($palette, margin);
+}
+@mixin dish-box-layout {
+    padding: map-get($dish-box-layout, padding);
+    margin: map-get($dish-box-layout, margin);
+    box-shadow: map-get($dish-box-layout, shadow);
+} 
