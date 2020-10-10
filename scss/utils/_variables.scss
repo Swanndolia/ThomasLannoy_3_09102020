@@ -1,41 +1,37 @@
 $primary-color:#9356DC;
-$seconday-color:#FF79DA;
+$secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
 $footer-bg:#2c2c2c;
-$section-bg:#e2e2e2;
+$section-bg:rgb(246,246,246);
 $box-bg:white;
-$dish-box-radius: 15px;
-$dish-box-padding: 5px;
+$dish-box-radius: 25px;
+$dish-box-padding: 0px 30px 0px 10px;
 $dish-box-margin: 5%;
 $dish-box-shadow: 1px;
 $dish-box-layout: (padding:($dish-box-padding), margin:($dish-box-margin), shadow:($dish-box-shadow));
-$font-palette: (brand: (size: 26px,
-        weight: 900,
+$font-palette: (brand: (size: 36px,
+        weight: 500,
+        color: black,
+        margin: 25px,
+        family: "Shrikhand",
+    ),
+    dish-type: (size: 20px,
+        weight: 100,
         color: $footer-bg,
-        type: italic,
         margin: 25px,
     ),
-    dish-type: (size: 18px,
-        weight: 300,
-        color: $footer-bg,
-        type: normal,
-        margin: 25px,
-    ),
-    dish-name: (size: 17px,
+    dish-name: (size: 22px,
         weight: 600,
-        color: $footer-bg,
-        type: normal,
-        margin: 5px,
+        color: black,
+        margin: 15px 5px,
     ),
-    dish-sub: (size: 15px,
+    dish-sub: (size: 18px,
         weight: 300,
         color: $footer-bg,
-        type: normal,
-        margin: 5px,
+        margin: -5px 5px 15px 5px,
     ),
-    footer: (size: 14px,
+    footer: (size: 19px,
         weight: 500,
         color: $section-bg,
-        type: normal,
         margin: 5px,
     ));

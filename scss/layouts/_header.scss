@@ -7,5 +7,13 @@ img{
 }
 nav{
     display: flex;
-    justify-self: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.fas {
+    position: absolute;
+    margin-left: -90%;
+    color: $footer-bg;
 }

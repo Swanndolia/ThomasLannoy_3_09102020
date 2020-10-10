@@ -1,16 +1,30 @@
 h1 {
-    @include font-palette(brand);
+  @include font-palette(brand);
 }
 h2 {
-    @include font-palette(dish-type);
+  @include font-palette(dish-type);
+  &.brand {
+    @include font-palette(brand);
+  }
+  &.footer {
+    @include font-palette(brand);
+    color: white;
+    font-weight: 100;
+  }
 }
 h3 {
-    @include font-palette(dish-name);
+  @include font-palette(dish-name);
 }
 h4 {
-    @include font-palette(dish-sub);
+  @include font-palette(dish-sub);
 }
 h5 {
-    @include font-palette(footer);
+  @include font-palette(footer);
 }
-
+html {
+  font-family: roboto;
+}
+footer {
+  @include font-palette(footer);
+  color: white;
+}

@@ -1,17 +1,31 @@
 body {
-    display: flex;
-    flex-direction: column;
-    line-height: 5px;
-}
-.box {
-    @include dish-box-layout;
-    width: 90%;
-    background-color: $box-bg;
-    border-radius: $dish-box-radius
+  display: flex;
+  flex-direction: column;
+
 }
 
-.section {
-    margin-top: -50px;
-    background-color: $section-bg;
-    border-radius: $dish-box-radius $dish-box-radius 0px 0px;
+.box {
+  @include dish-box-layout;
+  background-color: $box-bg;
+  border-radius: $dish-box-radius;
+  animation: box-appear 2.5s;
+  overflow: hidden;
+}
+
+.main-section {
+  margin-top: -50px;
+  background-color: $section-bg;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.dish-type {
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.dish-desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

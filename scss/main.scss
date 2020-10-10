@@ -2,9 +2,11 @@
 @import "./utils/fonctions";
 @import "./utils/mixins";
 @import "./utils/placeholders";
+@import "./utils/anims";
 //@import "./vendors";
 @import "./base/typographie";
-//@import "./componements";
+@import "./componements/dish_desc";
+@import "./componements/load_spinner";
 @import "./layouts/main";
 @import "./layouts/footer";
 @import "./layouts/header";
