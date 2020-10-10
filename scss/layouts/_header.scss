@@ -12,8 +12,8 @@ nav{
     justify-content: center;
     margin-bottom: 5px;
 }
-.fas {
-    position: absolute;
-    margin-left: -90%;
+.fas.back {
+    position: relative;
+    margin-left: -500%;
     color: $footer-bg;
 }

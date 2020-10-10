@@ -2,4 +2,8 @@
     width:100%;
     margin-top: 50px;
     background-color: $footer-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
 }
