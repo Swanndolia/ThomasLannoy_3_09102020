@@ -5,11 +5,24 @@ h2 {
   @include font-palette(dish-type);
   &.brand {
     @include font-palette(brand);
+    margin: 30px 6%;
   }
   &.footer {
     @include font-palette(brand);
     color: white;
     font-weight: 100;
+  }
+  &.dish-type__title {
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 50px;
+      display: block;
+      height: 4px;
+      background-color: $tertiary-color;
+      bottom: -5px;
+    }
   }
 }
 h3 {

@@ -108,7 +108,7 @@ h1 {
   font-size: 36px;
   font-weight: 500;
   color: black;
-  margin: 25px;
+  margin: 2px 6%;
   font-family: "Shrikhand";
 }
 
@@ -116,25 +116,40 @@ h2 {
   font-size: 20px;
   font-weight: 100;
   color: #2c2c2c;
-  margin: 25px;
+  margin: 10px 6%;
 }
 
 h2.brand {
   font-size: 36px;
   font-weight: 500;
   color: black;
-  margin: 25px;
+  margin: 2px 6%;
   font-family: "Shrikhand";
+  margin: 30px 6%;
 }
 
 h2.footer {
   font-size: 36px;
   font-weight: 500;
   color: black;
-  margin: 25px;
+  margin: 2px 6%;
   font-family: "Shrikhand";
   color: white;
   font-weight: 100;
+}
+
+h2.dish-type__title {
+  position: relative;
+}
+
+h2.dish-type__title::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  display: block;
+  height: 4px;
+  background-color: #99E2D0;
+  bottom: -5px;
 }
 
 h3 {
@@ -234,8 +249,8 @@ body {
 .box {
   padding: 0px 30px 0px 10px;
   margin: 5%;
-  -webkit-box-shadow: 1px #2c2c2c;
-          box-shadow: 1px #2c2c2c;
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
   background-color: white;
   border-radius: 25px;
   -webkit-animation: box-appear 2.5s;
@@ -265,9 +280,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
 }
 
 .footer {

@@ -10,5 +10,5 @@
 @mixin dish-box-layout {
   padding: map-get($dish-box-layout, padding);
   margin: map-get($dish-box-layout, margin);
-  box-shadow: map-get($dish-box-layout, shadow) $footer-bg;
+  box-shadow: map-get($dish-box-layout, shadow);
 }

@@ -7,18 +7,18 @@ $box-bg:white;
 $dish-box-radius: 25px;
 $dish-box-padding: 0px 30px 0px 10px;
 $dish-box-margin: 5%;
-$dish-box-shadow: 1px;
+$dish-box-shadow: 2px 2px 5px 2px darken(rgb(246,246,246), 10%);
 $dish-box-layout: (padding:($dish-box-padding), margin:($dish-box-margin), shadow:($dish-box-shadow));
 $font-palette: (brand: (size: 36px,
         weight: 500,
         color: black,
-        margin: 25px,
+        margin: 2px 6%,
         family: "Shrikhand",
     ),
     dish-type: (size: 20px,
         weight: 100,
         color: $footer-bg,
-        margin: 25px,
+        margin: 10px 6%,
     ),
     dish-name: (size: 22px,
         weight: 600,
