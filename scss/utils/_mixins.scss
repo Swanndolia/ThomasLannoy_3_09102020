@@ -2,7 +2,6 @@
   $palette: map-get($font-palette, $type);
   font-size: map-get($palette, size);
   font-weight: map-get($palette, weight);
-  font-style: map-get($palette, type);
   color: map-get($palette, color);
   margin: map-get($palette, margin);
   font-family: map-get($palette, family);

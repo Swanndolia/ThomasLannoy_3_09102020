@@ -104,36 +104,11 @@
   }
 }
 
-h1 {
-  font-size: 32px;
-  font-weight: 500;
-  color: black;
-  margin: 0px 6%;
-  font-family: "Shrikhand";
-}
-
-h2 {
-  font-size: 18px;
-  font-weight: 100;
-  color: #2c2c2c;
-  margin: 3% 6%;
-}
-
 h2.brand {
-  font-size: 32px;
-  font-weight: 500;
-  color: black;
-  margin: 0px 6%;
-  font-family: "Shrikhand";
   margin: 30px 6%;
 }
 
 h2.footer {
-  font-size: 32px;
-  font-weight: 500;
-  color: black;
-  margin: 0px 6%;
-  font-family: "Shrikhand";
   color: white;
   font-weight: 100;
   font-size: 20px;
@@ -155,36 +130,11 @@ h2.dish-type__title::after {
   bottom: -5px;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: black;
-  margin: 15px 5px;
-}
-
-h4 {
-  font-size: 16px;
-  font-weight: 300;
-  color: #2c2c2c;
-  margin: -5px 5px 15px 5px;
-}
-
-h5 {
-  font-size: 16px;
-  font-weight: 200;
-  color: #f6f6f6;
-  margin: 5px;
-}
-
 html {
   font-family: roboto;
 }
 
 footer {
-  font-size: 16px;
-  font-weight: 200;
-  color: #f6f6f6;
-  margin: 5px;
   color: white;
 }
 
@@ -339,9 +289,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 header {
@@ -462,5 +409,10 @@ figure {
   background-color: #f6f6f6;
   border-radius: 25px;
   font-weight: bold;
+}
+
+figcaption {
+  margin: 0px 10px;
+  line-height: 90%;
 }
 /*# sourceMappingURL=main.css.map */

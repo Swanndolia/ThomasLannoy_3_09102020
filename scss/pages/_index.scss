@@ -38,7 +38,7 @@ figure {
 }
 .localisation {
   background-color: darken($color: $section-bg, $amount: 7);
-  box-shadow: inset  0 3px 5px -5px $footer-bg;
+  box-shadow: inset 0 3px 5px -5px $footer-bg;
 }
 
 .discover {
@@ -57,4 +57,9 @@ figure {
   background-color: $section-bg;
   border-radius: $dish-box-radius;
   font-weight: bold;
+}
+
+figcaption {
+  margin: 0px 10px;
+  line-height: 90%;
 }

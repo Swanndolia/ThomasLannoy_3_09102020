@@ -27,15 +27,18 @@ h2 {
       bottom: -5px;
     }
   }
+  &.index{
+    @include font-palette(section-title);
+  }
 }
 h3 {
   @include font-palette(dish-name);
+  &.index{
+    @include font-palette(restaurant-name);
+  }
 }
 h4 {
   @include font-palette(dish-sub);
-}
-h5 {
-  @include font-palette(footer);
 }
 html {
   font-family: roboto;
