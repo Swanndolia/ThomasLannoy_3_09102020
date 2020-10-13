@@ -104,11 +104,36 @@
   }
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 500;
+  color: black;
+  margin: 0px 6%;
+  font-family: "Shrikhand";
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 100;
+  color: #2c2c2c;
+  margin: 3% 6%;
+}
+
 h2.brand {
+  font-size: 32px;
+  font-weight: 500;
+  color: black;
+  margin: 0px 6%;
+  font-family: "Shrikhand";
   margin: 30px 6%;
 }
 
 h2.footer {
+  font-size: 32px;
+  font-weight: 500;
+  color: black;
+  margin: 0px 6%;
+  font-family: "Shrikhand";
   color: white;
   font-weight: 100;
   font-size: 20px;
@@ -130,11 +155,43 @@ h2.dish-type__title::after {
   bottom: -5px;
 }
 
+h2.index {
+  font-size: 24px;
+  font-weight: 900;
+  color: black;
+  margin: 40px 25px 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin: 15px 5px;
+}
+
+h3.index {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin: 5px 10px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #2c2c2c;
+  margin: -5px 5px 15px 5px;
+}
+
 html {
   font-family: roboto;
 }
 
 footer {
+  font-size: 16px;
+  font-weight: 200;
+  color: white;
+  margin: 5px;
   color: white;
 }
 
@@ -186,11 +243,6 @@ a {
   right: 0;
   -webkit-animation: load-spinner-balls-after 1.5s ease-in-out;
           animation: load-spinner-balls-after 1.5s ease-in-out;
-}
-
-.fas {
-  margin-right: 5%;
-  color: #909090;
 }
 
 .fas.back {
@@ -319,13 +371,13 @@ nav {
 }
 
 figure {
-  margin: 5%;
+  margin: 2% 5%;
   width: 90%;
   height: 250px;
   background-color: white;
   border-radius: 20px 20px 20px 20px;
-  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
-          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +387,6 @@ figure {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 
 .index-section-fonctionnement {
@@ -346,6 +397,12 @@ figure {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.index-section-fonctionnement .fas {
+  margin-right: 5%;
+  color: #2c2c2c;
 }
 
 .index-section-restaurants {
@@ -386,6 +443,13 @@ figure {
   padding: 30px;
 }
 
+.discover p {
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  margin: 5px 10px 25px;
+}
+
 .index-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,15 +468,32 @@ figure {
   margin: 5%;
   -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
           box-shadow: 2px 2px 5px 2px #dddddd;
-  margin: 10px 5%;
+  margin: 15px 5%;
   padding: 10px;
   background-color: #f6f6f6;
   border-radius: 25px;
   font-weight: bold;
 }
 
-figcaption {
-  margin: 0px 10px;
-  line-height: 90%;
+.index-box:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(201, 171, 238, 0.2)), to(rgba(147, 86, 220, 0.2)));
+  background: linear-gradient(to right, rgba(201, 171, 238, 0.2), rgba(147, 86, 220, 0.2));
+}
+
+figcaption p {
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  margin: 5px 10px;
+}
+
+.btn-explore {
+  border-radius: 30px 30px 30px 30px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.index-body {
+  margin: 0px 20px;
 }
 /*# sourceMappingURL=main.css.map */

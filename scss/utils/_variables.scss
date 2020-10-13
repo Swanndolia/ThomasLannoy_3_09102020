@@ -48,7 +48,31 @@ $font-palette: (
   footer: (
     size: 16px,
     weight: 200,
-    color: $section-bg,
+    color: white,
     margin: 5px,
   ),
+  section-title: (
+    size: 24px,
+    weight: 900,
+    color: black,
+    margin: 40px 25px 10px,
+  ),
+  restaurant-name: (
+    size: 18px,
+    weight: 600,
+    color: black,
+    margin: 5px 10px,
+  ),
+  restaurant-desc: (
+    size: 16px,
+    weight: 300,
+    color: black,
+    margin: 5px 10px,
+  ),
+  discover: (
+    size: 16px,
+    weight: 300,
+    color: black,
+    margin: 5px 10px 25px,
+  )
 );

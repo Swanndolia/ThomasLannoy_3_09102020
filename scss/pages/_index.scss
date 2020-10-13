@@ -1,19 +1,23 @@
 figure {
-  margin: 5%;
+  margin: 2% 5%;
   width: 90%;
   height: 250px;
   background-color: white;
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: $dish-box-shadow;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 
 .index-section-fonctionnement {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
+  & .fas {
+    margin-right: 5%;
+    color: $footer-bg;
+  }
 }
 
 .index-section-restaurants {
@@ -36,6 +40,7 @@ figure {
   position: relative;
   color: $footer-bg;
 }
+
 .localisation {
   background-color: darken($color: $section-bg, $amount: 7);
   box-shadow: inset 0 3px 5px -5px $footer-bg;
@@ -44,6 +49,9 @@ figure {
 .discover {
   background-color: $section-bg;
   padding: 30px;
+  & p {
+    @include font-palette(discover);
+  }
 }
 
 .index-box {
@@ -52,14 +60,25 @@ figure {
   align-items: baseline;
   justify-content: left;
   @include dish-box-layout;
-  margin: 10px 5%;
+  margin: 15px 5%;
   padding: 10px;
   background-color: $section-bg;
   border-radius: $dish-box-radius;
   font-weight: bold;
+  &:hover {
+      background: linear-gradient(to right, rgba(lighten($primary-color, 20), 0.2), rgba($primary-color, 0.2));
+    }
+
+}
+figcaption p {
+  @include font-palette(restaurant-desc);
 }
 
-figcaption {
-  margin: 0px 10px;
-  line-height: 90%;
+.btn-explore {
+  border-radius: 30px 30px 30px 30px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.index-body {
+  margin: 0px 20px;
 }
