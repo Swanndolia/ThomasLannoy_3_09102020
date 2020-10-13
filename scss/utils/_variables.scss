@@ -1,37 +1,60 @@
-$primary-color:#9356DC;
-$secondary-color:#FF79DA;
-$tertiary-color:#99E2D0;
-$footer-bg:#2c2c2c;
-$section-bg:rgb(246,246,246);
-$box-bg:white;
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$footer-bg: #2c2c2c;
+$section-bg: rgb(246, 246, 246);
+$box-bg: white;
 $dish-box-radius: 25px;
 $dish-box-padding: 0px 30px 0px 10px;
 $dish-box-margin: 5%;
-$dish-box-shadow: 2px 2px 5px 2px darken(rgb(246,246,246), 10%);
-$dish-box-layout: (padding:($dish-box-padding), margin:($dish-box-margin), shadow:($dish-box-shadow));
-$font-palette: (brand: (size: 32px,
-        weight: 500,
-        color: black,
-        margin: 0px 6%,
-        family: "Shrikhand",
-    ),
-    dish-type: (size: 18px,
-        weight: 100,
-        color: $footer-bg,
-        margin: 3% 6%,
-    ),
-    dish-name: (size: 18px,
-        weight: 600,
-        color: black,
-        margin: 15px 5px,
-    ),
-    dish-sub: (size: 16px,
-        weight: 300,
-        color: $footer-bg,
-        margin: -5px 5px 15px 5px,
-    ),
-    footer: (size: 16px,
-        weight: 200,
-        color: $section-bg,
-        margin: 5px,
-    ));
+$dish-box-shadow: 2px 2px 5px 2px darken(rgb(246, 246, 246), 10%);
+$dish-box-layout: (
+  padding: (
+    $dish-box-padding,
+  ),
+  margin: (
+    $dish-box-margin,
+  ),
+  shadow: (
+    $dish-box-shadow,
+  ),
+);
+$font-palette: (
+  brand: (
+    size: 32px,
+    weight: 500,
+    color: black,
+    margin: 0px 6%,
+    family: "Shrikhand",
+  ),
+  dish-type: (
+    size: 18px,
+    weight: 100,
+    color: $footer-bg,
+    margin: 3% 6%,
+  ),
+  dish-name: (
+    size: 18px,
+    weight: 600,
+    color: black,
+    margin: 15px 5px,
+  ),
+  dish-sub: (
+    size: 16px,
+    weight: 300,
+    color: $footer-bg,
+    margin: -5px 5px 15px 5px,
+  ),
+  index-title: (
+    size: 22px,
+    weight: 600,
+    color: black,
+    margin: 15px 5px,
+  ),
+  footer: (
+    size: 16px,
+    weight: 200,
+    color: $section-bg,
+    margin: 5px,
+  ),
+);

@@ -11,6 +11,9 @@ h2 {
     @include font-palette(brand);
     color: white;
     font-weight: 100;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
   }
   &.dish-type__title {
     position: relative;

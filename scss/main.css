@@ -1,22 +1,22 @@
 @-webkit-keyframes box-appear {
   from {
     opacity: -5;
-    margin-top: -500px;
+    margin-top: -300px;
   }
   to {
     opacity: 1;
-    margin-top: 5%;
+    margin-top: 0px;
   }
 }
 
 @keyframes box-appear {
   from {
     opacity: -5;
-    margin-top: -500px;
+    margin-top: -300px;
   }
   to {
     opacity: 1;
-    margin-top: 5%;
+    margin-top: 0px;
   }
 }
 
@@ -136,6 +136,9 @@ h2.footer {
   font-family: "Shrikhand";
   color: white;
   font-weight: 100;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
 }
 
 h2.dish-type__title {
@@ -148,7 +151,7 @@ h2.dish-type__title::after {
   width: 50px;
   display: block;
   height: 4px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   bottom: -5px;
 }
 
@@ -189,14 +192,9 @@ footer {
   font-weight: bold;
 }
 
-.dish-desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .load-spinner {
@@ -217,7 +215,7 @@ footer {
   content: "";
   width: 20px;
   height: 20px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   position: absolute;
   top: 0;
   left: 0;
@@ -232,7 +230,7 @@ footer {
   height: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #FF79DA;
+  background-color: #ff79da;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -240,7 +238,44 @@ footer {
           animation: load-spinner-balls-after 1.5s ease-in-out;
 }
 
+.fas {
+  margin-right: 5%;
+  color: #909090;
+}
+
+.fas.back {
+  position: absolute;
+  color: #2c2c2c;
+  margin-right: 90%;
+}
+
+.fas.mapmarker {
+  color: #2c2c2c;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+li {
+  padding-top: 10px;
+}
+
+.pin {
+  margin-right: 5%;
+  margin-left: -22px;
+  background-color: #9356dc;
+  padding: 3px 8px;
+  border-radius: 50%;
+  color: white;
+  font-weight: lighter;
+}
+
 body {
+  margin: 0px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,11 +283,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0px;
-  padding: 0px;
 }
 
-.box {
+.dish-box {
   padding: 0px 30px 0px 10px;
   margin: 5%;
   -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
@@ -292,7 +325,8 @@ body {
 }
 
 .footer {
-  margin-top: 50px;
+  margin-top: 30px;
+  padding: 20px;
   background-color: #2c2c2c;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,14 +343,15 @@ body {
           align-items: baseline;
 }
 
+header {
+  padding-top: 10px;
+  text-align: center;
+}
+
 img {
-  width: auto;
   max-width: 100%;
   height: auto;
-  position: static;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  max-height: 350px;
 }
 
 nav {
@@ -333,12 +368,98 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 5px;
 }
 
-.fas.back {
+figure {
+  margin: 5%;
+  width: 90%;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.index-section-fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index-section-restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f6f6f6;
+}
+
+.preview {
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+  margin: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fas.map {
   position: relative;
-  margin-left: -500%;
   color: #2c2c2c;
+}
+
+.localisation {
+  background-color: #e4e4e4;
+  -webkit-box-shadow: inset 0 3px 5px -5px #2c2c2c;
+          box-shadow: inset 0 3px 5px -5px #2c2c2c;
+}
+
+.discover {
+  background-color: #f6f6f6;
+  padding: 30px;
+}
+
+.index-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 0px 30px 0px 10px;
+  margin: 5%;
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
+  margin: 10px 5%;
+  padding: 10px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

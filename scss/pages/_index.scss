@@ -1,0 +1,60 @@
+figure {
+  margin: 5%;
+  width: 90%;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.index-section-fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-section-restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: $section-bg;
+}
+
+.preview {
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.fas.map {
+  position: relative;
+  color: $footer-bg;
+}
+.localisation {
+  background-color: darken($color: $section-bg, $amount: 7);
+  box-shadow: inset  0 3px 5px -5px $footer-bg;
+}
+
+.discover {
+  background-color: $section-bg;
+  padding: 30px;
+}
+
+.index-box {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: left;
+  @include dish-box-layout;
+  margin: 10px 5%;
+  padding: 10px;
+  background-color: $section-bg;
+  border-radius: $dish-box-radius;
+  font-weight: bold;
+}
