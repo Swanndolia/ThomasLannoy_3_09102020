@@ -159,7 +159,9 @@ h2.index {
   font-size: 24px;
   font-weight: 900;
   color: black;
-  margin: 40px 25px 10px;
+  margin: 40px 25px 20px;
+  margin-top: 0px;
+  padding-top: 50px;
 }
 
 h3 {
@@ -173,7 +175,7 @@ h3.index {
   font-size: 18px;
   font-weight: 600;
   color: black;
-  margin: 5px 10px;
+  margin: 15px 10px 5px;
 }
 
 h4 {
@@ -264,16 +266,6 @@ ul {
 
 li {
   padding-top: 10px;
-}
-
-.pin {
-  margin-right: 5%;
-  margin-left: -22px;
-  background-color: #9356dc;
-  padding: 3px 8px;
-  border-radius: 50%;
-  color: white;
-  font-weight: lighter;
 }
 
 body {
@@ -371,7 +363,7 @@ nav {
 }
 
 figure {
-  margin: 2% 5%;
+  margin: -20px 5%;
   width: 90%;
   height: 250px;
   background-color: white;
@@ -389,6 +381,29 @@ figure {
       flex-wrap: wrap;
 }
 
+figure .far {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 25px;
+}
+
+figure .fas {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 25px;
+  display: none;
+}
+
+figure :hover .far {
+  display: none;
+  color: #9356dc;
+}
+
+figure :hover .fas {
+  display: block;
+  color: #9356dc;
+}
+
 .index-section-fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,7 +417,7 @@ figure {
 
 .index-section-fonctionnement .fas {
   margin-right: 5%;
-  color: #2c2c2c;
+  color: #909090;
 }
 
 .index-section-restaurants {
@@ -414,6 +429,7 @@ figure {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #f6f6f6;
+  gap: 60px;
 }
 
 .preview {
@@ -425,11 +441,6 @@ figure {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.fas.map {
-  position: relative;
-  color: #2c2c2c;
 }
 
 .localisation {
@@ -444,8 +455,8 @@ figure {
 }
 
 .discover p {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 100;
   color: black;
   margin: 5px 10px 25px;
 }
@@ -480,20 +491,65 @@ figure {
   background: linear-gradient(to right, rgba(201, 171, 238, 0.2), rgba(147, 86, 220, 0.2));
 }
 
+.index-box:hover .fas {
+  color: #9356dc;
+}
+
 figcaption p {
   font-size: 16px;
   font-weight: 300;
   color: black;
-  margin: 5px 10px;
+  margin: 0px 10px;
 }
 
 .btn-explore {
   border-radius: 30px 30px 30px 30px;
-  padding: 15px;
+  padding: 15px 20px;
   margin-bottom: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ea72da), to(#ae80e5));
+  background: linear-gradient(#ea72da, #ae80e5);
+  border-style: hidden;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  margin: 0px 0px 50px;
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
 }
 
-.index-body {
-  margin: 0px 20px;
+.index-body section {
+  padding: 0px 20px;
+}
+
+.index-body footer {
+  margin-top: 80px;
+  padding: 20px 40px;
+}
+
+span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-right: 25px;
+}
+
+.pin {
+  margin-right: 5%;
+  margin-left: -22px;
+  background-color: #9356dc;
+  padding: 3px 8px;
+  border-radius: 50%;
+  color: white;
+  font-weight: lighter;
 }
 /*# sourceMappingURL=main.css.map */

@@ -55,24 +55,30 @@ $font-palette: (
     size: 24px,
     weight: 900,
     color: black,
-    margin: 40px 25px 10px,
+    margin: 40px 25px 20px,
   ),
   restaurant-name: (
     size: 18px,
     weight: 600,
     color: black,
-    margin: 5px 10px,
+    margin: 15px 10px 5px,
   ),
   restaurant-desc: (
     size: 16px,
     weight: 300,
     color: black,
-    margin: 5px 10px,
+    margin: 0px 10px,
   ),
   discover: (
-    size: 16px,
-    weight: 300,
+    size: 18px,
+    weight: 100,
     color: black,
     margin: 5px 10px 25px,
+  ),
+  btn-explore: (
+    size: 18px,
+    weight: 300,
+    color: white,
+    margin: 0px 0px 50px,
   )
 );

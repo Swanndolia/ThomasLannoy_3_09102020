@@ -29,6 +29,8 @@ h2 {
   }
   &.index{
     @include font-palette(section-title);
+    margin-top: 0px;
+    padding-top: 50px;
   }
 }
 h3 {
