@@ -163,7 +163,7 @@
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 500;
   color: black;
   margin: 5px;
@@ -178,7 +178,7 @@ h2 {
 }
 
 h2.brand {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 500;
   color: black;
   margin: 5px;
@@ -187,7 +187,7 @@ h2.brand {
 }
 
 h2.footer {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 500;
   color: black;
   margin: 5px;
@@ -226,7 +226,7 @@ h3 {
   font-size: 18px;
   font-weight: 600;
   color: black;
-  margin: 15px 0px;
+  margin: 15px 0px 0px;
 }
 
 h3.index {
@@ -240,7 +240,7 @@ h4 {
   font-size: 15px;
   font-weight: 300;
   color: #2c2c2c;
-  margin: 0px -50px 15px 0px;
+  margin: 2px -50px 10px 0px;
 }
 
 html {
@@ -257,6 +257,13 @@ footer {
 
 .dish-desc {
   font-weight: bold;
+}
+
+.dish-box h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 85%;
 }
 
 a {
@@ -388,10 +395,10 @@ li {
 .dish-box:hover .check-appear {
   display: block;
   position: relative;
-  height: 65px;
-  margin-top: -65px;
+  height: 100px;
+  margin-top: -100px;
   margin-left: 90%;
-  width: 80px;
+  width: 100px;
   -webkit-animation: check-appear 0.5s;
           animation: check-appear 0.5s;
 }
@@ -403,7 +410,7 @@ li {
 }
 
 .dish-box:hover .fa-check {
-  margin: 22px 20px;
+  margin: 55% 25px;
   -webkit-animation: check-rotate 0.5s;
           animation: check-rotate 0.5s;
 }
@@ -441,7 +448,6 @@ body {
   -webkit-animation: box-appear 2.5s;
           animation: box-appear 2.5s;
   overflow: hidden;
-  line-height: 65%;
 }
 
 .main-section {
@@ -495,7 +501,6 @@ header {
 img {
   max-width: 100%;
   height: auto;
-  min-height: 105%;
 }
 
 nav {
@@ -515,7 +520,7 @@ nav {
 }
 
 figure {
-  margin: -20px 0px;
+  margin: 20px -20px;
   width: 100%;
   height: 250px;
   background-color: white;
@@ -581,7 +586,7 @@ figure :hover .fas {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #f6f6f6;
-  gap: 60px;
+  width: 100%;
 }
 
 .preview {
@@ -694,7 +699,8 @@ span {
   border-radius: 10%;
   padding: 5px 10px;
   margin-left: 65%;
-  margin-top: 5%;
+  margin-right: 50px;
+  margin-top: 40px;
   position: absolute;
   background-color: #99e2d0;
   color: #2c9c81;
@@ -702,7 +708,7 @@ span {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 900px) {
   html {
     max-width: 100%;
     overflow-x: hidden;
@@ -719,9 +725,9 @@ span {
   }
   h2.brand {
     text-align: center;
-    margin-left: 50px;
   }
   .dish-list {
+    padding-bottom: 100px;
     margin-left: -20px;
     margin-right: 20px;
     display: -webkit-box;
@@ -744,23 +750,82 @@ span {
     text-align: center;
   }
   .--order {
+    position: absolute;
     display: block;
-    height: 100px;
-    margin: 0px 0px 80px 0px;
+    height: 50px;
+    width: 95%;
+    margin: 70px 70px 20px 70px;
   }
   .fas.back {
     margin-left: -5%;
   }
+  .fas-title {
+    position: r;
+  }
   .fas-title .far {
-    margin-left: 60%;
+    margin-left: 97%;
   }
   .fas-title .fas {
-    margin-left: 60%;
+    margin-left: 97%;
   }
   .dish-box:hover .fa-check {
-    margin: 22px 25px;
     -webkit-animation: check-rotate 0.5s;
             animation: check-rotate 0.5s;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  figure {
+    max-width: 22%;
+  }
+  .header-index {
+    height: auto;
+  }
+  .index-body section {
+    margin: 0px;
+    padding: 0px;
+  }
+  h2.index {
+    text-align: center;
+    padding-top: 25px;
+  }
+  .index-section-fonctionnement {
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  .index-fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .index-restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .index-box {
+    width: 25%;
+  }
+  .discover {
+    padding-bottom: 0px;
+  }
+  .flag-new {
+    margin-top: -230px;
+    margin-left: 280px;
   }
 }
 /*# sourceMappingURL=main.css.map */

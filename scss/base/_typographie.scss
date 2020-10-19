@@ -52,3 +52,9 @@ footer {
 .dish-desc{
   font-weight: bold;
 }
+.dish-box h4{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 85%;
+}

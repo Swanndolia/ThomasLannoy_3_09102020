@@ -21,7 +21,7 @@ $dish-box-layout: (
 );
 $font-palette: (
   brand: (
-    size: 30px,
+    size: 27px,
     weight: 500,
     color: black,
     margin: 5px,
@@ -37,13 +37,13 @@ $font-palette: (
     size: 18px,
     weight: 600,
     color: black,
-    margin: 15px 0px,
+    margin: 15px 0px 0px,
   ),
   dish-sub: (
     size: 15px,
     weight: 300,
     color: $footer-bg,
-    margin: 0px -50px 15px 0px,
+    margin: 2px -50px 10px 0px,
   ),
   footer: (
     size: 15px,
