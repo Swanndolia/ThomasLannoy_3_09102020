@@ -1,11 +1,41 @@
-.fas{
-    &.back {
+.fas {
+  &.back {
     position: absolute;
     color: $footer-bg;
     margin-right: 90%;
-    }
-    &.mapmarker{
-        color: $footer-bg;
-        margin-right: 15px;
-    }
+  }
+  &.mapmarker {
+    color: $footer-bg;
+    margin-right: 15px;
+  }
+  &.fa-check {
+    background-color: white;
+    margin: 35%;
+    border-radius: 50%;
+    color: $tertiary-color;
+    padding: 3px;
+  }
+}
+.fas-title {
+  & .far {
+    margin-top: -35px;
+    margin-left: 85%;
+    position: absolute;
+    font-size: 25px;
+    &:hover {
+        opacity: 0;
+        color: $primary-color;
+      }
+  }
+  & .fas {
+    margin-top: -35px;
+    position: absolute;
+    margin-left: 85%;
+    font-size: 25px;
+    opacity: 0;
+    &:hover {
+        opacity: 100;
+        color: $primary-color;
+      }
+  }
 }

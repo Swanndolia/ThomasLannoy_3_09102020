@@ -11,10 +11,11 @@ body {
   border-radius: $dish-box-radius;
   animation: box-appear 2.5s;
   overflow: hidden;
+  line-height: 65%;
 }
 
 .main-section {
-  margin-top: -50px;
+  margin-top: -30px;
   background-color: $section-bg;
   border-radius: 50px 50px 0px 0px;
 }
@@ -29,4 +30,5 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  width: 100%;
 }

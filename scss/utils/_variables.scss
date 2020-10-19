@@ -4,9 +4,9 @@ $tertiary-color: #99e2d0;
 $footer-bg: #2c2c2c;
 $section-bg: rgb(246, 246, 246);
 $box-bg: white;
-$dish-box-radius: 25px;
+$dish-box-radius: 15px;
 $dish-box-padding: 0px 30px 0px 10px;
-$dish-box-margin: 5%;
+$dish-box-margin: 15px;
 $dish-box-shadow: 2px 2px 5px 2px darken(rgb(246, 246, 246), 10%);
 $dish-box-layout: (
   padding: (
@@ -21,32 +21,32 @@ $dish-box-layout: (
 );
 $font-palette: (
   brand: (
-    size: 32px,
+    size: 30px,
     weight: 500,
     color: black,
-    margin: 0px 6%,
+    margin: 5px,
     family: "Shrikhand",
   ),
   dish-type: (
-    size: 18px,
+    size: 16px,
     weight: 100,
     color: $footer-bg,
-    margin: 3% 6%,
+    margin: 25px 6% 20px,
   ),
   dish-name: (
     size: 18px,
     weight: 600,
     color: black,
-    margin: 15px 5px,
+    margin: 15px 0px,
   ),
   dish-sub: (
-    size: 16px,
+    size: 15px,
     weight: 300,
     color: $footer-bg,
-    margin: -5px 5px 15px 5px,
+    margin: 0px -50px 15px 0px,
   ),
   footer: (
-    size: 16px,
+    size: 15px,
     weight: 200,
     color: white,
     margin: 5px,
@@ -75,9 +75,9 @@ $font-palette: (
     color: black,
     margin: 5px 10px 25px,
   ),
-  btn-explore: (
-    size: 18px,
-    weight: 300,
+  btn: (
+    size: 16px,
+    weight: 500,
     color: white,
     margin: 0px 0px 50px,
   )

@@ -104,35 +104,93 @@
   }
 }
 
+@-webkit-keyframes check-appear {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: 90%;
+  }
+}
+
+@keyframes check-appear {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: 90%;
+  }
+}
+
+@-webkit-keyframes move-price {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 20%;
+  }
+}
+
+@keyframes move-price {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 20%;
+  }
+}
+
+@-webkit-keyframes check-rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes check-rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 h1 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
   color: black;
-  margin: 0px 6%;
+  margin: 5px;
   font-family: "Shrikhand";
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   color: #2c2c2c;
-  margin: 3% 6%;
+  margin: 25px 6% 20px;
 }
 
 h2.brand {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
   color: black;
-  margin: 0px 6%;
+  margin: 5px;
   font-family: "Shrikhand";
-  margin: 30px 6%;
+  margin: 30px 6% 0px;
 }
 
 h2.footer {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
   color: black;
-  margin: 0px 6%;
+  margin: 5px;
   font-family: "Shrikhand";
   color: white;
   font-weight: 100;
@@ -148,9 +206,9 @@ h2.dish-type__title {
 h2.dish-type__title::after {
   content: '';
   position: absolute;
-  width: 50px;
+  width: 40px;
   display: block;
-  height: 4px;
+  height: 3px;
   background-color: #99e2d0;
   bottom: -5px;
 }
@@ -160,7 +218,7 @@ h2.index {
   font-weight: 900;
   color: black;
   margin: 40px 25px 20px;
-  margin-top: 0px;
+  margin: 0px;
   padding-top: 50px;
 }
 
@@ -168,7 +226,7 @@ h3 {
   font-size: 18px;
   font-weight: 600;
   color: black;
-  margin: 15px 5px;
+  margin: 15px 0px;
 }
 
 h3.index {
@@ -179,10 +237,10 @@ h3.index {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
   color: #2c2c2c;
-  margin: -5px 5px 15px 5px;
+  margin: 0px -50px 15px 0px;
 }
 
 html {
@@ -190,7 +248,7 @@ html {
 }
 
 footer {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 200;
   color: white;
   margin: 5px;
@@ -204,6 +262,27 @@ footer {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.btn {
+  border-radius: 30px 30px 30px 30px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ea72da), to(#9356dc));
+  background: linear-gradient(#ea72da, #9356dc);
+  border-style: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin: 0px 0px 50px;
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
+}
+
+.--order {
+  display: block;
+  margin: 40px auto 50px;
+  padding: 15px 50px;
 }
 
 .load-spinner {
@@ -258,6 +337,39 @@ a {
   margin-right: 15px;
 }
 
+.fas.fa-check {
+  background-color: white;
+  margin: 35%;
+  border-radius: 50%;
+  color: #99e2d0;
+  padding: 3px;
+}
+
+.fas-title .far {
+  margin-top: -35px;
+  margin-left: 85%;
+  position: absolute;
+  font-size: 25px;
+}
+
+.fas-title .far:hover {
+  opacity: 0;
+  color: #9356dc;
+}
+
+.fas-title .fas {
+  margin-top: -35px;
+  position: absolute;
+  margin-left: 85%;
+  font-size: 25px;
+  opacity: 0;
+}
+
+.fas-title .fas:hover {
+  opacity: 100;
+  color: #9356dc;
+}
+
 ul {
   list-style: none;
   margin-top: 10px;
@@ -266,6 +378,44 @@ ul {
 
 li {
   padding-top: 10px;
+}
+
+.check-appear {
+  display: none;
+  background-color: #99e2d0;
+}
+
+.dish-box:hover .check-appear {
+  display: block;
+  position: relative;
+  height: 65px;
+  margin-top: -65px;
+  margin-left: 90%;
+  width: 20%;
+  -webkit-animation: check-appear 0.5s;
+          animation: check-appear 0.5s;
+}
+
+.dish-box:hover .price {
+  -webkit-animation: move-price 0.5s;
+          animation: move-price 0.5s;
+  margin-right: 20%;
+}
+
+.dish-box:hover .fa-check {
+  -webkit-animation: check-rotate 0.5s;
+          animation: check-rotate 0.5s;
+}
+
+.dish-box:hover h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 65%;
+}
+
+.price {
+  margin-right: 0px;
 }
 
 body {
@@ -282,18 +432,19 @@ body {
 
 .dish-box {
   padding: 0px 30px 0px 10px;
-  margin: 5%;
+  margin: 15px;
   -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
           box-shadow: 2px 2px 5px 2px #dddddd;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 15px;
   -webkit-animation: box-appear 2.5s;
           animation: box-appear 2.5s;
   overflow: hidden;
+  line-height: 65%;
 }
 
 .main-section {
-  margin-top: -50px;
+  margin-top: -30px;
   background-color: #f6f6f6;
   border-radius: 50px 50px 0px 0px;
 }
@@ -317,6 +468,7 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  width: 100%;
 }
 
 .footer {
@@ -343,7 +495,7 @@ header {
 img {
   max-width: 100%;
   height: auto;
-  max-height: 350px;
+  min-height: 105%;
 }
 
 nav {
@@ -363,8 +515,8 @@ nav {
 }
 
 figure {
-  margin: -20px 5%;
-  width: 90%;
+  margin: -20px 0px;
+  width: 100%;
   height: 250px;
   background-color: white;
   border-radius: 20px 20px 20px 20px;
@@ -476,13 +628,13 @@ figure :hover .fas {
       -ms-flex-pack: left;
           justify-content: left;
   padding: 0px 30px 0px 10px;
-  margin: 5%;
+  margin: 15px;
   -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
           box-shadow: 2px 2px 5px 2px #dddddd;
   margin: 15px 5%;
   padding: 10px;
   background-color: #f6f6f6;
-  border-radius: 25px;
+  border-radius: 15px;
   font-weight: bold;
 }
 
@@ -500,21 +652,6 @@ figcaption p {
   font-weight: 300;
   color: black;
   margin: 0px 10px;
-}
-
-.btn-explore {
-  border-radius: 30px 30px 30px 30px;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ea72da), to(#ae80e5));
-  background: linear-gradient(#ea72da, #ae80e5);
-  border-style: hidden;
-  font-size: 18px;
-  font-weight: 300;
-  color: white;
-  margin: 0px 0px 50px;
-  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
-          box-shadow: 2px 2px 5px 2px #dddddd;
 }
 
 .index-body section {
@@ -551,5 +688,17 @@ span {
   border-radius: 50%;
   color: white;
   font-weight: lighter;
+}
+
+.flag-new {
+  border-radius: 10%;
+  padding: 5px 10px;
+  margin-left: 65%;
+  margin-top: 5%;
+  position: absolute;
+  background-color: #99e2d0;
+  color: #2c9c81;
+  font-size: 14;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

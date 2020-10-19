@@ -5,7 +5,7 @@ h2 {
   @include font-palette(dish-type);
   &.brand {
     @include font-palette(brand);
-    margin: 30px 6%;
+    margin: 30px 6% 0px;
   }
   &.footer {
     @include font-palette(brand);
@@ -20,16 +20,16 @@ h2 {
     &::after{
       content: '';
       position: absolute;
-      width: 50px;
+      width: 40px;
       display: block;
-      height: 4px;
+      height: 3px;
       background-color: $tertiary-color;
       bottom: -5px;
     }
   }
   &.index{
     @include font-palette(section-title);
-    margin-top: 0px;
+    margin: 0px;
     padding-top: 50px;
   }
 }

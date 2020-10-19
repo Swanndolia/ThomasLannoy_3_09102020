@@ -39,3 +39,30 @@
     transform: translate(5px, 5px);
   }
 }
+
+@keyframes check-appear {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: 90%;
+  }
+}
+
+@keyframes move-price {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 20%;
+  }
+}
+
+@keyframes check-rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
