@@ -30,7 +30,7 @@
     margin: 0px;
     text-align: center;
   }
-  .--order {
+  .box--order {
     position: absolute;
     display: block;
     height: 50px;
@@ -41,7 +41,7 @@
     margin-left: -5%;
   }
   .fas-title {
-    position: r;
+    position: relative;
     & .far {
       
       margin-left: 97%;
