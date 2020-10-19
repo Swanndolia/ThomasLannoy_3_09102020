@@ -1,0 +1,55 @@
+@media screen and (min-width: 1280px) {
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+  header {
+    margin: 0px;
+    padding: 0px;
+    height: 42%;
+    overflow: hidden;
+    & img {
+      object-fit: cover;
+    }
+  }
+  h2.brand {
+    text-align: center;
+    margin-left: 50px;
+  }
+  .dish-list {
+    margin-left: -20px;  
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  }
+  .dish-type {
+    flex: 3;
+  }
+  .footer {
+    margin: 0px;
+    text-align: center;
+  }
+  .--order {
+    display: block;
+    height: 100px;
+    margin: 0px 0px 80px 0px;
+  }
+  .fas.back {
+    margin-left: -5%;
+  }
+  .fas-title {
+    & .far {
+      margin-left: 60%;
+    }
+    & .fas {
+      margin-left: 60%;
+    }
+  }
+  .dish-box:hover {
+    & .fa-check {
+      margin: 22px 25px;
+      animation: check-rotate 0.5s;
+    }
+  }
+}
