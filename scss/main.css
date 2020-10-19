@@ -209,6 +209,10 @@ a {
   color: inherit;
 }
 
+.btn:hover {
+  background: linear-gradient(#ed88e0, #a16be0);
+}
+
 .btn {
   border-radius: 30px 30px 30px 30px;
   padding: 15px 20px;
