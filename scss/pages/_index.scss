@@ -1,6 +1,7 @@
 figure {
-  margin: 20px -20px;
-  width: 100%;
+  margin: 0px 10% 0px 10px;
+  margin-right: 10%;
+  min-width: 96%;
   height: 250px;
   background-color: white;
   border-radius: 20px 20px 20px 20px;
@@ -9,11 +10,9 @@ figure {
   flex-direction: row;
   flex-wrap: wrap;
   & .far {
-    align-self: flex-end;
     font-size: 25px;
   }
   & .fas {
-    align-self: flex-end;
     font-size: 25px;
     display: none;
   }
@@ -27,10 +26,19 @@ figure {
   }
 }
 
+figcaption {
+  min-width: 98%;
+  & div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .index-section-fonctionnement {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   & .fas {
     margin-right: 5%;
     color: darken($section-bg, 40);
@@ -42,6 +50,10 @@ figure {
   flex-direction: column;
   background-color: $section-bg;
   width: 100%;
+  & a {
+    margin: 25px 20px;
+    width: 35%;
+  }
 }
 
 .preview {
@@ -49,7 +61,6 @@ figure {
   height: 175px;
   overflow: hidden;
   border-radius: 20px 20px 0px 0px;
-  margin: auto;
   display: block;
   object-fit: cover;
 }
@@ -73,7 +84,7 @@ figure {
   align-items: baseline;
   justify-content: left;
   @include dish-box-layout;
-  margin: 15px 5%;
+  margin: 20px 5%;
   padding: 10px;
   background-color: $section-bg;
   border-radius: $dish-box-radius;
@@ -91,10 +102,9 @@ figcaption p {
 
 .index-body {
   & section {
-    padding: 0px 20px;
+    margin: 0px 0px;
   }
   & footer {
-    margin-top: 80px;
     padding: 20px 40px;
   }
 }
@@ -117,12 +127,11 @@ span {
   font-weight: lighter;
 }
 
-.flag-new{
+.flag-new {
   border-radius: 10%;
   padding: 5px 10px;
-  margin-left: 65%;
-  margin-right: 50px;
-  margin-top: 40px;
+  margin-left: 73%;
+  margin-top: -220px;
   position: absolute;
   background-color: $tertiary-color;
   color: darken($tertiary-color, 35);

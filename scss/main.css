@@ -115,7 +115,7 @@ h2.dish-type__title {
 }
 
 h2.dish-type__title::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 40px;
   display: block;
@@ -129,7 +129,10 @@ h2.index {
   font-weight: 900;
   color: black;
   margin: 40px 25px 20px;
-  margin: 0px;
+}
+
+h2.index.index-section {
+  margin: 20px 20px;
   padding-top: 50px;
 }
 
@@ -144,7 +147,7 @@ h3.index {
   font-size: 18px;
   font-weight: 600;
   color: black;
-  margin: 15px 10px 5px;
+  margin: 0px 10px 5px;
 }
 
 h4 {
@@ -328,6 +331,11 @@ li {
   margin-right: 0px;
 }
 
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -377,6 +385,10 @@ header {
   text-align: center;
 }
 
+header:not(.header-index) {
+  max-height: 320px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -390,8 +402,9 @@ nav {
 }
 
 figure {
-  margin: 20px -20px;
-  width: 100%;
+  margin: 0px 10% 0px 10px;
+  margin-right: 10%;
+  min-width: 96%;
   height: 250px;
   background-color: white;
   border-radius: 20px 20px 20px 20px;
@@ -402,12 +415,10 @@ figure {
 }
 
 figure .far {
-  align-self: flex-end;
   font-size: 25px;
 }
 
 figure .fas {
-  align-self: flex-end;
   font-size: 25px;
   display: none;
 }
@@ -422,10 +433,20 @@ figure :hover .fas {
   color: #9356dc;
 }
 
+figcaption {
+  min-width: 98%;
+}
+
+figcaption div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .index-section-fonctionnement {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .index-section-fonctionnement .fas {
@@ -440,12 +461,16 @@ figure :hover .fas {
   width: 100%;
 }
 
+.index-section-restaurants a {
+  margin: 25px 20px;
+  width: 35%;
+}
+
 .preview {
   width: 100%;
   height: 175px;
   overflow: hidden;
   border-radius: 20px 20px 0px 0px;
-  margin: auto;
   display: block;
   object-fit: cover;
 }
@@ -475,7 +500,7 @@ figure :hover .fas {
   padding: 0px 30px 0px 10px;
   margin: 15px;
   box-shadow: 2px 2px 5px 2px #dddddd;
-  margin: 15px 5%;
+  margin: 20px 5%;
   padding: 10px;
   background-color: #f6f6f6;
   border-radius: 15px;
@@ -498,11 +523,10 @@ figcaption p {
 }
 
 .index-body section {
-  padding: 0px 20px;
+  margin: 0px 0px;
 }
 
 .index-body footer {
-  margin-top: 80px;
   padding: 20px 40px;
 }
 
@@ -527,9 +551,8 @@ span {
 .flag-new {
   border-radius: 10%;
   padding: 5px 10px;
-  margin-left: 65%;
-  margin-right: 50px;
-  margin-top: 40px;
+  margin-left: 73%;
+  margin-top: -220px;
   position: absolute;
   background-color: #99e2d0;
   color: #2c9c81;
@@ -538,18 +561,14 @@ span {
 }
 
 @media screen and (min-width: 900px) {
-  html {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
   header {
     margin: 0px;
     padding: 0px;
     height: 42%;
     overflow: hidden;
   }
-  header img {
-    object-fit: cover;
+  header .img {
+    object-fit: scale-down;
   }
   h2.brand {
     text-align: center;
@@ -569,7 +588,7 @@ span {
     margin: 0px;
     text-align: center;
   }
-  .box--order {
+  .btn--order {
     position: absolute;
     display: block;
     height: 50px;
@@ -593,12 +612,13 @@ span {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 720px) {
   figure {
     max-width: 22%;
   }
   .header-index {
     height: auto;
+    margin: none;
   }
   .index-body section {
     margin: 0px;
@@ -607,6 +627,7 @@ span {
   h2.index {
     text-align: center;
     padding-top: 25px;
+    margin-top: 0px;
   }
   .index-section-fonctionnement {
     margin-bottom: 10px;
@@ -630,7 +651,6 @@ span {
     padding-bottom: 0px;
   }
   .flag-new {
-    margin-top: -230px;
     margin-left: 280px;
   }
 }

@@ -1,9 +1,10 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 720px) {
   figure {
     max-width: 22%;
   }
   .header-index{
     height: auto;
+    margin: none;
   }
   .index-body section{
     margin: 0px;
@@ -12,6 +13,7 @@
   h2.index {
     text-align: center;
     padding-top: 25px;
+    margin-top: 0px;
   }
   .index-section-fonctionnement{
     margin-bottom: 10px;
@@ -35,7 +37,6 @@
     padding-bottom: 0px;
   }
   .flag-new {
-    margin-top: -230px;
     margin-left: 280px;
   }
 }
