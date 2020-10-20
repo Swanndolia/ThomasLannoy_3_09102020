@@ -569,10 +569,6 @@ figcaption div {
   background: linear-gradient(to right, rgba(201, 171, 238, 0.2), rgba(147, 86, 220, 0.2));
 }
 
-.index-box:hover .fas {
-  background: #9356dc;
-}
-
 figcaption p {
   font-size: 16px;
   font-weight: 300;

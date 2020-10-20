@@ -104,9 +104,6 @@ figcaption {
   font-weight: bold;
   &:hover {
     background: linear-gradient(to right, rgba(lighten($primary-color, 20), 0.2), rgba($primary-color, 0.2));
-    & .fas {
-      background: $primary-color;
-    }
   }
 }
 figcaption p {
