@@ -17,25 +17,34 @@
   }
 }
 .fas-title {
-  & .far {
+  & .fas:not(.hidden) {
     margin-top: -35px;
-    margin-left: 85%;
     position: absolute;
-    font-size: 25px;
+    margin-left: 85%;
+    font-size: 24px;
+    -webkit-text-stroke: 1px black;
+    color: transparent;
     &:hover {
-        opacity: 0;
-        color: $primary-color;
-      }
+      opacity: 0;
+    }
   }
-  & .fas {
-    margin-top: -35px;
+  & .fas.hidden {
+    margin-top: -36px;
     position: absolute;
     margin-left: 85%;
-    font-size: 25px;
     opacity: 0;
-    &:hover {
-        opacity: 1;
-        color: $primary-color;
-      }
+    font-size: 26px;
+    -webkit-text-stroke: 1px white;
+    transition: 0.4s ease-out;
+    background: linear-gradient(210deg, $primary-color, $primary-color, $primary-color, orange, orange) right;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 0%;
+    &:hover{
+      opacity: 1;
+      background-size: 100%;
+      cursor: pointer;
+    }
   }
 }

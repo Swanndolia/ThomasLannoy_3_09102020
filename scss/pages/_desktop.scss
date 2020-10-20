@@ -36,17 +36,17 @@
   .fas.back {
     margin-left: -5%;
   }
-  .fas-title {
-    & .far {
-      margin-left: 97%;
-    }
-    & .fas {
-      margin-left: 97%;
-    }
-  }
   .dish-box:hover {
     & .fa-check {
       animation: check-rotate 0.5s;
     }
+  }
+  .fas-title{
+    & .fas:not(.hidden) {
+      margin-left: 97%;
+    }
+    & .fas.hidden {
+      margin-left: 97%;
+  }
   }
 }

@@ -9,20 +9,34 @@ figure {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  & .far {
-    font-size: 25px;
+  & .fas:not(.hidden) {
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 84%;
+    font-size: 24px;
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+    &:hover {
+      opacity: 0;
+    }
   }
-  & .fas {
-    font-size: 25px;
-    display: none;
-  }
-  & :hover .far {
-    display: none;
-    color: $primary-color;
-  }
-  & :hover .fas {
-    display: block;
-    color: $primary-color;
+  & .fas.hidden {
+    margin-top: -1px;
+    position: absolute;
+    margin-left: 84%;
+    opacity: 0;
+    font-size: 26px;
+    -webkit-text-stroke: 1px white;
+    transition: 0.4s ease-out;
+    background: linear-gradient(210deg, $primary-color, $primary-color, $primary-color, orange, orange) right;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 0%;
+    &:hover{
+      opacity: 1;
+      background-size: 100%;
+    }
   }
 }
 
@@ -92,7 +106,7 @@ figcaption {
   &:hover {
     background: linear-gradient(to right, rgba(lighten($primary-color, 20), 0.2), rgba($primary-color, 0.2));
     & .fas {
-      color: $primary-color;
+      background: $primary-color;
     }
   }
 }
@@ -131,7 +145,7 @@ span {
   border-radius: 10%;
   padding: 5px 10px;
   margin-left: 73%;
-  margin-top: -220px;
+  margin-top: 15px;
   position: absolute;
   background-color: $tertiary-color;
   color: darken($tertiary-color, 35);

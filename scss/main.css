@@ -80,7 +80,7 @@
     transform: rotate(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(1440deg);
   }
 }
 
@@ -297,29 +297,38 @@ a {
   padding: 3px;
 }
 
-.fas-title .far {
-  margin-top: -35px;
-  margin-left: 85%;
-  position: absolute;
-  font-size: 25px;
-}
-
-.fas-title .far:hover {
-  opacity: 0;
-  color: #9356dc;
-}
-
-.fas-title .fas {
+.fas-title .fas:not(.hidden) {
   margin-top: -35px;
   position: absolute;
   margin-left: 85%;
-  font-size: 25px;
+  font-size: 24px;
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+}
+
+.fas-title .fas:not(.hidden):hover {
   opacity: 0;
 }
 
-.fas-title .fas:hover {
+.fas-title .fas.hidden {
+  margin-top: -36px;
+  position: absolute;
+  margin-left: 85%;
+  opacity: 0;
+  font-size: 26px;
+  -webkit-text-stroke: 1px white;
+  transition: 0.4s ease-out;
+  background: linear-gradient(210deg, #9356dc, #9356dc, #9356dc, orange, orange) right;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 0%;
+}
+
+.fas-title .fas.hidden:hover {
   opacity: 1;
-  color: #9356dc;
+  background-size: 100%;
+  cursor: pointer;
 }
 
 ul {
@@ -451,23 +460,37 @@ figure {
   flex-wrap: wrap;
 }
 
-figure .far {
-  font-size: 25px;
+figure .fas:not(.hidden) {
+  margin-top: 0px;
+  position: absolute;
+  margin-left: 84%;
+  font-size: 24px;
+  -webkit-text-stroke: 1px black;
+  color: transparent;
 }
 
-figure .fas {
-  font-size: 25px;
-  display: none;
+figure .fas:not(.hidden):hover {
+  opacity: 0;
 }
 
-figure :hover .far {
-  display: none;
-  color: #9356dc;
+figure .fas.hidden {
+  margin-top: -1px;
+  position: absolute;
+  margin-left: 84%;
+  opacity: 0;
+  font-size: 26px;
+  -webkit-text-stroke: 1px white;
+  transition: 0.4s ease-out;
+  background: linear-gradient(210deg, #9356dc, #9356dc, #9356dc, orange, orange) right;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 0%;
 }
 
-figure :hover .fas {
-  display: block;
-  color: #9356dc;
+figure .fas.hidden:hover {
+  opacity: 1;
+  background-size: 100%;
 }
 
 figcaption {
@@ -549,7 +572,7 @@ figcaption div {
 }
 
 .index-box:hover .fas {
-  color: #9356dc;
+  background: #9356dc;
 }
 
 figcaption p {
@@ -589,7 +612,7 @@ span {
   border-radius: 10%;
   padding: 5px 10px;
   margin-left: 73%;
-  margin-top: -220px;
+  margin-top: 15px;
   position: absolute;
   background-color: #99e2d0;
   color: #2c9c81;
@@ -646,20 +669,26 @@ span {
   .fas.back {
     margin-left: -5%;
   }
-  .fas-title .far {
-    margin-left: 97%;
-  }
-  .fas-title .fas {
-    margin-left: 97%;
-  }
   .dish-box:hover .fa-check {
     animation: check-rotate 0.5s;
+  }
+  .fas-title .fas:not(.hidden) {
+    margin-left: 97%;
+  }
+  .fas-title .fas.hidden {
+    margin-left: 97%;
   }
 }
 
 @media screen and (min-width: 720px) {
   figure {
     max-width: 22%;
+  }
+  figure .fas:not(.hidden) {
+    margin-left: 30%;
+  }
+  figure .fas.hidden {
+    margin-left: 30%;
   }
   .header-index {
     height: auto;
